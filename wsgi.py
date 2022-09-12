@@ -19,7 +19,7 @@ api.add_resource(HealthCheck, '/ws/healthz/')
 class Info(Resource):
     description = {
         'id': 'nationalparks-py',
-        'displayName': 'Ricks National Parks (PY)',
+        'displayName': 'TAPS National Parks (PY)',
         'type': 'cluster',
         'center': {'latitude': '47.039304', 'longitude': '14.505178'},
         'zoom': 4
@@ -77,4 +77,4 @@ api.add_resource(DataAll, '/ws/data/all')
 
 @application.route('/')
 def index():
-    return 'Welcome to Ricks National Parks data service.'
+    return 'Welcome to TAPS National Parks data service.'
